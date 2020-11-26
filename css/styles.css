@@ -1,19 +1,71 @@
-/*
-палітра шрифтів:
-color: #2196F3;  синій ( частина логотипу,hover по посиланнях тобто акцент)
-color: #000000; логотип (чорний)
-color: #212121; (h2, h3, посилання, текст на кнопках портфоліо)
-color: #757575; (посилання на e-mail, абзаци)
-background: #F5F4FA; (section "Our command")
-background: #F5F4FA; (кнопки портфоліо)
+:root {
+    --accent-color: #2196F3; /*( частина логотипу,hover по посиланнях тобто акцент)*/
+    --logo-color: #000000; /*частина логотипу (світлий фон)*/
+    --heading-color: #212121; /*(h2, h3, посилання, текст на кнопках портфоліо) */
+    --main-color: #757575; /*(посилання на e-mail, абзаци)*/
+    --main-color-dark-backgr: #ffffff; /*(h1, кнопка "заказать услугу", рядок адреси, частина логотипу на темному фоні)*/
+    --backgr-color-first: #2F303A; /*(footer, hero)*/
+    --backgr-color-second: #F5F4FA; /*(section "Our command",  кнопки портфоліо)*/
+    --addres-second-color: rgba(255, 255, 255, 0.6); /*(емейл і телефон футера)*/
+    --main-font: 'Roboto', Roboto, sans-serif; /*головний шрифт для всього тексту*/
+    --secondary-font: 'Raleway', Raleway, sans-serif; /*вторинний шрифт для логотипу*/
+}
 
-        dark them
-color: #FFFFF (h1, кнопка "заказать услугу", рядок адреси, частина логотипу)
-color: rgba(255, 255, 255, 0.6); (емейл і телефон)
-background: #2F303A; (footer, hero)
+body {
+        color: var(--main-color);
+        font-family: var(--main-font);
+}
+
+/* ============== HEADER ============== */
+
+.address {
+        font-style: normal;
+}
+.logo {
+        color: var(--logo-color);
+        font-family: var(--secondary-font);
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 1.192;
+        letter-spacing: 0.03em;
+        text-decoration: none;
+}
+
+.logo-first {
+        color: var(--accent-color);
+}
+
+.navigation-list-link,
+.address-list-link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+ }
+
+.navigation-list-link{
+        color: var(--heading-color);
+}
+
+.address-list-link {
+        color: var(--main-color);
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.address-list-link:hover,
+.address-list-link:focus {
+         color: var(--accent-color);
+}
+
+/* ============== END HEADER ============== */
 
 
-шрифти:
-Raleway - bold (700)
 
-Roboto - normal (400), 500, bold (700), 900*/
+
+
+
+
+
+ 
