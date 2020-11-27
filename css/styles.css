@@ -16,6 +16,12 @@ body {
         font-family: var(--main-font);
 }
 
+ul {
+        l-st-style: none;
+        margin: 0;
+        padding: 0;
+}
+
 /* ============== HEADER ============== */
 
 .address {
@@ -129,6 +135,10 @@ background-color: var(--accent-color);
 
 /* ============== OUR COMAND ============== */
 
+.our-command-section {
+        background-color: var(--backgr-color-second);
+}
+
 .our-specialist-name {
         font-weight: 500;
         color: var(--heading-color);
@@ -148,4 +158,25 @@ background-color: var(--accent-color);
 
 /* ============== OUR COMAND END ============== */
 
+/* ============== FOOTER ============== */
+.footer {
+        background-color: var(--backgr-color-first);
+}
+
+.logo-second-dark {
+        color: var(--main-color-dark-backgr);
+}
+
+.address-footer-link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+}
+
+.location {
+        color: var(--main-color-dark-backgr);
+}
+/* ============== FOOTER END ============== */
  
