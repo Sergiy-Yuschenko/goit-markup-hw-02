@@ -22,6 +22,11 @@ ul {
         padding: 0;
 }
 
+a {
+        text-decoration: none;
+        color: var(--main-color);
+}
+
 
 .visually-hidden {
         position: absolute;
@@ -77,9 +82,6 @@ ul {
          color: var(--accent-color);
 }
 
-.nav-link {
-        text-decoration: none;
-}
 
 /* ============== END HEADER ============== */
 
@@ -186,7 +188,7 @@ ul {
         font-size: 14px;
         line-height: 1.714;
         letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
+        color: var(--addres-second-color);
 }
 
 .location {
@@ -197,7 +199,7 @@ ul {
 /* ============== PORTFOLIO.HTML ============== */
 
 .portfolio-button {
-        color:;
+        color: var(--heading-color);
         background-color: var(--backgr-color-second);
         font-weight: 500;
         font-size: 16px;
@@ -207,7 +209,35 @@ ul {
 
 }
 
-.portfolio-button:hover {
+.portfolio-button:hover,
+.portfolio-button:focus {
         background-color: var(--accent-color);
         color: var(--main-color-dark-backgr);
 }
+
+.portfolio-description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.556;
+        letter-spacing: 0.03em;
+        color: var(--main-color-dark-backgr);
+        background-color: var(--accent-color);
+}
+
+.portfolio-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: var(--heading-color);
+}
+
+.portfolio-type {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.03em;
+
+}
+
+/* ============== PORTFOLIO.HTML END ============== */
