@@ -22,6 +22,20 @@ ul {
         padding: 0;
 }
 
+
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
+
 /* ============== HEADER ============== */
 
 .address {
@@ -179,4 +193,21 @@ ul {
         color: var(--main-color-dark-backgr);
 }
 /* ============== FOOTER END ============== */
- 
+
+/* ============== PORTFOLIO.HTML ============== */
+
+.portfolio-button {
+        color:;
+        background-color: var(--backgr-color-second);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.625;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+}
+
+.portfolio-button:hover {
+        background-color: var(--accent-color);
+        color: var(--main-color-dark-backgr);
+}
